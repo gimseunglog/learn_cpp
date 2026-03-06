@@ -5,7 +5,7 @@ int main() {
     int A, B;
     cin >> A >> B;
     int C = 0;
-    for(int i = A; i < B; i++){
+    for(int i = A; i <= B; i++){
         if(i % 2 == 0){
             C += i;
         }
