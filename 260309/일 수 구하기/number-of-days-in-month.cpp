@@ -17,7 +17,7 @@ int main() {
         }
     }
     else{
-        if(n % 2 == 1){
+        if(n % 2 == 0){
             m = 31;
         }
         else{
