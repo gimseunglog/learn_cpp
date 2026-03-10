@@ -11,7 +11,7 @@ int main() {
         s += a;
     }
     cout << fixed;
-    cout.precision(1)
+    cout.precision(1);
     cout << s << ' ' << (double)s / N;
     return 0;
 }
