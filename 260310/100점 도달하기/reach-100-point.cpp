@@ -18,7 +18,7 @@ int main() {
             cout << 'D' << ' ';
         }
         else{
-            cout << 'E' << ' ';
+            cout << 'F' << ' ';
         }
     }
     return 0;
