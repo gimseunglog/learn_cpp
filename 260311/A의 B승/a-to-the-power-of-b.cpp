@@ -8,6 +8,9 @@ int main() {
     for(int i = 1; i < B; i++){
         n *= A;
     }
+    if(B == 0){
+        n = 1;
+    }
     cout << n;
     return 0;
 }
