@@ -7,7 +7,7 @@ int main() {
     int c = 0;
     while(1){
         cin >> a;
-        if(a / 10 != 0){
+        if(a / 10 != 2){
             break;
         }
         s += a;
