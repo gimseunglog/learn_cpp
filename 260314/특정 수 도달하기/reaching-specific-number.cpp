@@ -13,8 +13,15 @@ int main() {
         }
         sum += a;
     }
+    double avg;
+    if(cnt){
+        avg = (double)sum / cnt;
+    }
+    else{
+        avg = 0;
+    }
     cout << fixed;
     cout.precision(1);
-    cout << sum << ' ' << (double)sum/cnt;
+    cout << sum << ' ' << avg;
     return 0;
 }
