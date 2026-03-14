@@ -8,10 +8,10 @@ int main() {
     int cnt = 0;
     for(int i = 0; i < 10; i++){
         cin >> num;
-        if(num % 2 == 0){
+        if((i + 1) % 2 == 0){
             even_sum += num;
         }
-        if(num % 3 == 0){
+        if((i + 1) % 3 == 0){
             t_sum += num;
             cnt++;
         }
