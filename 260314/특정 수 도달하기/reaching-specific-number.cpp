@@ -13,15 +13,17 @@ int main() {
         }
         sum += a;
     }
+    cout << fixed;
+    cout.precision(1);
     double avg;
     if(cnt){
         avg = (double)sum / cnt;
+        cout << sum << ' ' << avg;
     }
     else{
-        avg = 0;
+        cout << sum << " -nan";
     }
-    cout << fixed;
-    cout.precision(1);
-    cout << sum << ' ' << avg;
+    
+    
     return 0;
 }
