@@ -8,6 +8,9 @@ int main() {
     for(int i = 0; i < 10; i++){
         cin >> a;
         if(a >= 250){
+            for(int j = i; j < 10; j++){
+                cin >> a;
+            }
             cnt = i;
             break;
         }
