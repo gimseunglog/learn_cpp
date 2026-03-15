@@ -4,11 +4,23 @@ using namespace std;
 int main() {
     int A, B;
     cin >> A >> B;
-    int c = 0;
-    while(A / B > 1){
-        A /= B;
-        c++;
+    int a[10];
+    for(int i = 0; i < 10; i++){
+        a[i] = 0;
     }
-    cout << c;
+    int rm;
+    while(1){
+        rm = A / B;
+        A /= B;
+        a[A % B]++;
+        if(rm <= 1){
+            break;
+        }
+    }
+    int sum = 0;
+    for(int i = 0; i < 10; i++){
+        sum += a[i] * a[i];
+    }
+    cout << sum;
     return 0;
 }
