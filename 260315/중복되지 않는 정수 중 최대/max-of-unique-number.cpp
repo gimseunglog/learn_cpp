@@ -13,7 +13,8 @@ int main() {
 
     int o;
     int cnt = 0;
-    int max = nums[0];
+    int max = 1;
+    int max2 = 1;
 
     for(int i = 1; i < N; i++){
         if(nums[i] >= max){
@@ -23,6 +24,7 @@ int main() {
         }
         if(cnt >= 2){
             o = -1;
+            max = max2;
         }
     }
     cout << o;
