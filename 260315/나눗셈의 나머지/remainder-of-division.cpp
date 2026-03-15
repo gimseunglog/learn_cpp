@@ -11,8 +11,8 @@ int main() {
     int rm;
     while(1){
         rm = A / B;
-        A /= B;
         a[A % B]++;
+        A /= B;        
         if(rm <= 1){
             break;
         }
