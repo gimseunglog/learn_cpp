@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int N;
+int nums[1000];
+
+int main() {
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        cin >> nums[i];
+    }
+
+    int o;
+    int cnt = 0;
+    int max = nums[0];
+
+    for(int i = 1; i < N; i++){
+        if(nums[i] >= max){
+            max = nums[i];
+            cnt++;
+            o = max;
+        }
+        if(cnt >= 2){
+            o = -1;
+        }
+    }
+    cout << o;
+
+    return 0;
+}
