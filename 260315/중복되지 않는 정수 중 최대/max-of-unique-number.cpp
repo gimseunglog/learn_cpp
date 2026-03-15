@@ -18,11 +18,13 @@ int main() {
 
     for(int i = 1; i < N; i++){
         if(nums[i] >= max){
+            max2 = max;
             max = nums[i];
             cnt++;
             o = max;
         }
         if(cnt >= 2){
+            cnt = 0;
             o = -1;
             max = max2;
         }
