@@ -7,10 +7,10 @@ int main() {
     int tmp;
     cout << a << ' ' << b << ' ';
     for(int i = 0; i < 8; i++){
-        cout << a + b << ' ';
+        cout << (a + b) % 10 << ' ';
         tmp = b;
-        b = a + b;
-        a = b;
+        b = (a + b) % 10;
+        a = tmp;
     }
     return 0;
 }
