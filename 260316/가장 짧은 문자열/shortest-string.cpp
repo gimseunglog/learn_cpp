@@ -12,7 +12,14 @@ int main() {
     if(c.length() < min){
         min = c.length();
     }
-    cout << min;
+    int max = a.length();
+    if(b.length() > max){
+        max = b.length();
+    }
+    if(c.length() > max){
+        max = c.length();
+    }
+    cout << max - min;
     
     return 0;
 }
