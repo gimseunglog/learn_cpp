@@ -13,10 +13,8 @@ int main() {
     int sum = 0;
     for(int i = 0; i < N; i++){
         sum += s[i].length();
-        for(int j = 0; j < s[i].length(); j++){
-            if(s[i][j] == 'a'){
-                cnt++;
-            }
+        if(s[i][0] == 'a'){
+            cnt++;
         }
     }
     cout << sum << ' ' << cnt;
