@@ -12,7 +12,7 @@ bool is_leap(int y){
 int main() {
     int y;
     cin >> y;
-    if(is_leap){
+    if(is_leap(y)){
         cout << "true";
     }
     else{
