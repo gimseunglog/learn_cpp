@@ -3,7 +3,12 @@ using namespace std;
 int month[12] = {31, 28, 31, 30 , 31, 30, 31, 31, 30, 31, 30, 31};
 
 bool check_days(int m, int d){
-    return (d <= month[m - 1]);
+    if(m <= 12){
+        return (d <= month[m - 1]);
+    }
+    else{
+        return false;
+    }
 }
  
 int main() {
