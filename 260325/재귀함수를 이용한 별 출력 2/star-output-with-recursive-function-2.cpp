@@ -7,11 +7,11 @@ int N;
 void printStar(int N){
     if(N > 0){
         for(int i = 0; i < N; i++)
-            cout << "*";
+            cout << "* ";
         cout << endl;
         printStar(N-1);
         for(int i = 0; i < N; i++)
-            cout << "*";
+            cout << "* ";
         cout << endl;
     }
 }
