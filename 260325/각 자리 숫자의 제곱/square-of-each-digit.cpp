@@ -8,7 +8,7 @@ int sum_square(int N){
     if(N == 0)
         return 0;
     else{
-        int n = N % 10
+        int n = N % 10;
         return n * n + sum_square(N / 10);
     }
 }
