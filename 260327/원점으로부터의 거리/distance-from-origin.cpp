@@ -20,7 +20,11 @@ int abs(int n){
 }
 
 bool cmp(length a, length b){
-    return (abs(a.x) + abs(a.y)) < (abs(b.x) + abs(b.y));
+    int a_len = abs(a.x) + abs(a.y);
+    int b_len = abs(b.x) + abs(b.y);
+    if(a_len != b_len)
+        return a_len < b_len;
+    return a.num < b.num;
 }
 
 int main() {
