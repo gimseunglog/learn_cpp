@@ -34,7 +34,7 @@ int main() {
     sort(p, p + N, cmp); 
     
     for(int i = 0; i < N; i++){
-        result[p.location[i]] = i + 1;
+        result[p[i].location - 1] = i + 1;
     }
 
     for(int i = 0; i < N; i++){
