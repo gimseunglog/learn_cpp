@@ -34,6 +34,9 @@ int main() {
         info[i] = information(n, h, w);
     }
 
+    cout << fixed;
+    cout.precision(1);
+
     sort(info, info + 5, cpn);
 
     cout << "name" << endl;
