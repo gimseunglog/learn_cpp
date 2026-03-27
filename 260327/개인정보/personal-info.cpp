@@ -5,9 +5,10 @@ using namespace std;
 class information{
     public:
         string name;
-        int height, weight;
+        int height;
+        double weight;
         information() { }
-        information(string name, int height, int weight){
+        information(string name, int height, double weight){
             this->name = name;
             this->height = height;
             this->weight = weight;
@@ -19,7 +20,7 @@ bool cpn(information a, information b){
 }
 
 bool cph(information a, information b){
-    return a.height < b.height;
+    return a.height > b.height;
 }
 
 int main() {
@@ -27,7 +28,8 @@ int main() {
 
     for(int i = 0; i < 5; i++){
         string n;
-        int h, w;
+        int h;
+        double w;
         cin >> n >> h >> w;
         info[i] = information(n, h, w);
     }
@@ -42,6 +44,7 @@ int main() {
 
     sort(info, info + 5, cph);
 
+    cout << "height" << endl;
     for(int i = 0; i < 5; i++){
         cout << info[i].name << ' ' << info[i].height << ' ' << info[i].weight << endl;
     }
