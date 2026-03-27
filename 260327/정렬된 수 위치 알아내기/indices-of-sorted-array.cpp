@@ -21,6 +21,7 @@ bool cmp(point a, point b){
 int main() {
     int N;
     point p[1000];
+    int result[1000];
 
     cin >> N;
 
@@ -30,10 +31,14 @@ int main() {
         p[i] = point(n, i + 1);
     }
 
-    sort(p, p + N, cmp);
+    sort(p, p + N, cmp); 
+    
+    for(int i = 0; i < N; i++){
+        result[p.location[i]] = i + 1;
+    }
 
     for(int i = 0; i < N; i++){
-        cout << p[i].location << ' ';
+        cout << result[i] << ' ';
     }
 
     return 0;
