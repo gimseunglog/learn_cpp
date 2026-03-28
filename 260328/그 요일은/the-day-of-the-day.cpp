@@ -24,8 +24,8 @@ int main() {
     int cnt = 0;
 
     for(int i = 0; i <= total; i++) {
-        if(i % 7 == day)
-            cnt++;
+        int curDay = i % 7; 
+        if(curDay == day) cnt++;
     }
 
     cout << cnt;
