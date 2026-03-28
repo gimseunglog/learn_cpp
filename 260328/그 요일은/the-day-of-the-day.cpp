@@ -14,10 +14,10 @@ int main() {
     int dt1 = d1;
     int dt2 = d2;
 
-    for(int i = 0; i < m1; i++){
+    for(int i = 0; i < m1 - 1; i++){
         dt1 += m[i];
     }
-    for(int i = 0; i < m2; i++){
+    for(int i = 0; i < m2 - 1; i++){
         dt2 += m[i];
     }
 
