@@ -24,7 +24,7 @@ int main() {
     int total = dt2 - dt1;
     int cnt = 0;
 
-    for(int i = 0; i < total; i++){
+    for(int i = 0; i <= total; i++){
         if(i % 7 == day){
             cnt++;
         }
