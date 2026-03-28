@@ -2,6 +2,7 @@
 using namespace std;
 
 int m[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+enum days {Mon, Tue, Wed, Thu, Fri, Sat, Sun};
 
 int main() {
     int m1, d1, m2, d2;
@@ -19,15 +20,15 @@ int main() {
     for(int i = 0; i < m2 - 1; i++)
         dt2 += m[i];
 
-    int total = dt2 - dt1;
+    int total = dt2 - dt1 - day;
 
     int cnt = 0;
 
-    for(int i = 0; i <= total; i++) {
-        int curDay = i % 7; 
-        if(curDay == day) cnt++;
+    while(total >= 0){
+        cnt++;
+        total -= 7;
     }
-
+    
     cout << cnt;
 
     return 0;
