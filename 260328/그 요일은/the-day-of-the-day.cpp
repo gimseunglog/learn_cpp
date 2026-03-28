@@ -6,10 +6,19 @@ enum days {Mon, Tue, Wed, Thu, Fri, Sat, Sun};
 
 int main() {
     int m1, d1, m2, d2;
+    string s;
     int day;
 
     cin >> m1 >> d1 >> m2 >> d2;
-    cin >> day;
+    cin >> s;
+
+    if(s == "Mon") day = Mon;
+    else if(s == "Tue") day = Tue;
+    else if(s == "Wed") day = Wed;
+    else if(s == "Thu") day = Thu;
+    else if(s == "Fri") day = Fri;
+    else if(s == "Sat") day = Sat;
+    else if(s == "Sun") day = Sun;
 
     int dt1 = d1;
     int dt2 = d2;
@@ -28,7 +37,7 @@ int main() {
         cnt++;
         total -= 7;
     }
-    
+
     cout << cnt;
 
     return 0;
