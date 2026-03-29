@@ -6,7 +6,11 @@ int main() {
     cin >> n;
     int digit[100000];
     int cnt = 0;
-    while(n > 0){
+    while(true){
+        if(n < 2){
+            digit[cnt++] = n;
+            break;
+        }
         digit[cnt++] = n % 2;
         n /= 2;
     }
