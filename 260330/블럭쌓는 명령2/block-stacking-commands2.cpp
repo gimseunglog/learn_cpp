@@ -17,7 +17,7 @@ int main() {
     int max = -1;
     for(int i = 0; i < n; i++){
         if(max < arr[i]){
-            max = i + 1;
+            max = arr[i];
         }
     }
 
