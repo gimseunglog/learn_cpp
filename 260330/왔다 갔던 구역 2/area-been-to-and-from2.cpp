@@ -5,8 +5,8 @@ int main() {
     int n;
     cin >> n;
 
-    int check[201] = {0};
-    int num = 100;
+    int check[2001] = {0};
+    int num = 1000;
     for(int i = 0; i < n; i++){
         int n;
         char c;
@@ -25,13 +25,13 @@ int main() {
     }
 
     int cnt = 0;
-    for(int i = 0; i < 201; i++){
+    for(int i = 0; i < 2001; i++){
         if(check[i] >= 2){
             cnt++;
         }
     }
 
     cout << cnt;
-    
+
     return 0;
 }
