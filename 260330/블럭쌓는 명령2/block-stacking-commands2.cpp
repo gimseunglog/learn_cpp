@@ -9,7 +9,7 @@ int main() {
     for(int i = 0; i < k; i++){
         int a, b;
         cin >> a >> b;
-        for(int j = a; j <= b; j++){
+        for(int j = a - 1; j <= b - 1; j++){
             arr[i][j] = 1;
         }
     }
