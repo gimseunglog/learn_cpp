@@ -5,25 +5,19 @@ int main() {
     int n, k;
     cin >> n >> k;
 
-    int arr[100][100] = {0};
+    int arr[100] = {0};
     for(int i = 0; i < k; i++){
         int a, b;
         cin >> a >> b;
         for(int j = a - 1; j <= b - 1; j++){
-            arr[i][j] = 1;
+            arr[j]++;
         }
     }
 
     int max = -1;
-    for(int i = 0; i < k; i++){
-        int cnt = 0;
-        for(int j = 0; j < n; j++){
-            if(arr[i][j] == 1){
-                cnt++;
-            }
-        }
-        if(max < cnt){
-            max = cnt;
+    for(int i = 0; i < n; i++){
+        if(max < arr[i]){
+            max = i + 1;
         }
     }
 
