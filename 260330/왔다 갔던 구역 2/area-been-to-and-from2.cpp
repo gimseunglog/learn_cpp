@@ -20,8 +20,8 @@ int main() {
         else if(c == 'L')
         {
             for(int i = 0; i < n; i++){
-                check[num]++;
                 num--;
+                check[num]++;
             }
         }
     }
