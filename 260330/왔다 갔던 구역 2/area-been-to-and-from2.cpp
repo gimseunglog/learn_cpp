@@ -13,13 +13,15 @@ int main() {
         cin >> n >> c;
         if(c == 'R'){
             for(int i = 0; i < n; i++){
-                check[num++]++;
+                check[num]++;
+                num++;
             }
         }
         else if(c == 'L')
         {
             for(int i = 0; i < n; i++){
-                check[num--]++;
+                check[num]++;
+                num--;
             }
         }
     }
