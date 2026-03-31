@@ -38,6 +38,10 @@ int main() {
             }
         }
     }
-    cout << (maxX - minX + 1) * (maxY - minY + 1);
+    if(maxX == -1) {
+        cout << 0;
+    } else {
+        cout << (maxX - minX + 1) * (maxY - minY + 1);
+    }
     return 0;
 }
