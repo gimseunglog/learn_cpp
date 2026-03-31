@@ -25,7 +25,9 @@ int main() {
             }
         }
     }
-    int cnt = 0;
+    
+    int minX = 2001, maxX = -1;
+    int minY = 2001, maxY = -1;
     for(int j = 0; j < 2001; j++){
         for(int k = 0; k < 2001; k++){
             if(a[j][k] == 1){
