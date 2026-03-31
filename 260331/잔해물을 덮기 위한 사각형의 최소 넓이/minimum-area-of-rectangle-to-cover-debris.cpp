@@ -11,15 +11,15 @@ int main() {
         y1 += 1000;
         y2 += 1000;
         if(i == 0){
-            for(int j = y1; j <= y2; j++){
-                for(int k = x1; k <= x2; k++){
+            for(int j = y1; j < y2; j++){
+                for(int k = x1; k < x2; k++){
                     a[j][k] = 1;
                 }
             }
         }
         if(i == 1){
-            for(int j = y1; j <= y2; j++){
-                for(int k = x1; k <= x2; k++){
+            for(int j = y1; j < y2; j++){
+                for(int k = x1; k < x2; k++){
                     a[j][k] = 0;
                 }
             }
@@ -29,10 +29,13 @@ int main() {
     for(int j = 0; j < 2001; j++){
         for(int k = 0; k < 2001; k++){
             if(a[j][k] == 1){
-                cnt++;
+                minX = min(minX, k);
+                maxX = max(maxX, k);
+                minY = min(minY, j);
+                maxY = max(maxY, j);
             }
         }
     }
-    cout << cnt;
+    cout << (maxX - minX) * (maxY - minY);
     return 0;
 }
