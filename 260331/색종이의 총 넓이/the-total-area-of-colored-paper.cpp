@@ -11,8 +11,8 @@ int main() {
         cin >> x >> y;
         x += 100;
         y += 100;
-        for(int j = y; j < 8; j++){
-            for(int k = x; k < 8; k++){
+        for(int j = y; j < y + 8; j++){
+            for(int k = x; k < x + 8; k++){
                 a[j][k] = 1;
             }
         }
