@@ -11,15 +11,15 @@ int main() {
         y1 += 1000;
         y2 += 1000;
         if(i == 0){
-            for(int j = y1; j < y2; j++){
-                for(int k = x1; k < x2; k++){
+            for(int j = y1; j <= y2; j++){
+                for(int k = x1; k <= x2; k++){
                     a[j][k] = 1;
                 }
             }
         }
         if(i == 1){
-            for(int j = y1; j < y2; j++){
-                for(int k = x1; k < x2; k++){
+            for(int j = y1; j <= y2; j++){
+                for(int k = x1; k <= x2; k++){
                     a[j][k] = 0;
                 }
             }
