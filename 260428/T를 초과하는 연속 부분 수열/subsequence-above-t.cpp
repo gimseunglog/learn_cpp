@@ -13,7 +13,7 @@ int main() {
     int cnt = 0;
     int max = -1;
     for(int i = 0; i < n; i++){
-        if(i >= 1 && arr[i] > t){
+        if(arr[i] > t){
             cnt++;
         }
         else{
