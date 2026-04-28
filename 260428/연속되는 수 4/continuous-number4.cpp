@@ -10,11 +10,11 @@ int main() {
     for(int i = 0; i < N; i++){
         int n;
         cin >> n;
-        if(n < pre){
-            cnt = 0;
+        if(n > pre){
+            cnt++;
         }
         else{
-            cnt++;
+            cnt = 1;
         }
         pre = n;
         max = (max < cnt) ? cnt : max;
