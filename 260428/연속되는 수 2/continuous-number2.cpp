@@ -21,6 +21,9 @@ int main() {
             cnt++;
         }
     }
+    if(cnt > max){
+        max = cnt;
+    }
     cout << max << endl;
     return 0;
 }
