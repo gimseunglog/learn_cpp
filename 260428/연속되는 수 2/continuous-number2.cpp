@@ -4,19 +4,23 @@ using namespace std;
 int main() {
     int N;
     cin >> N;
-    int cnt = 0;
     int max = -1;
+    int cnt = 0;
+    int pre = -1;
     for(int i = 0; i < N; i++){
         int n;
         cin >> n;
-        if(n > max){
-            cnt = 0;
-            max = n;
+        if(n != pre){
+            if(cnt > max){
+                max = cnt;
+            }
+            cnt = 1;
+            pre = n;
         }
-        else if(n == max){
+        else{
             cnt++;
         }
     }
-    cout << cnt << endl;
+    cout << max << endl;
     return 0;
 }
